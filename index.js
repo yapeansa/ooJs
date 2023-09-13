@@ -7,5 +7,8 @@ import Admin from "./Admin.js";
 
 const novoAdmin = new Admin('Rodrigo', 'r@r.com', '2021-01-01');
 console.log(novoAdmin.nome);
-novoAdmin.nome = '';
+novoAdmin.nome = 'Clement';
 console.log(novoAdmin.nome);
+
+const novoDocente = new Docente('Guilherme', 'g@g.com', '2021-01-02');
+console.log(novoDocente.exibirInfos());
