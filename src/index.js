@@ -1,6 +1,6 @@
-import User from "./User.js";
-import Docente from "./Docente.js";
-import Admin from "./Admin.js";
+import User from "../modelos/User.js";
+import Docente from "../modelos/Docente.js";
+import Admin from "../modelos/Admin.js";
 
 // const novoUser = new User('Yago', 'yapeansa@gmail.com', '1993-11-21');
 // console.log(novoUser.nome);
