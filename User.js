@@ -32,6 +32,25 @@ export default class User {
         return this.#ativo;
     }
 
+    set nome(novoNome) {
+        if (novoNome === '') {
+            throw new Error('Formato não válido.');
+        }
+        this.#nome = novoNome;
+    }
+
+    set email(novoEmail) {
+        this.#email = novoEmail;
+    }
+
+    set role(novoRole) {
+        this.#role = novoRole;
+    }
+
+    set ativo(novoStatus) {
+        this.#ativo = novoStatus;
+    }
+
     exibirInfos() {
         return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`;
     }
